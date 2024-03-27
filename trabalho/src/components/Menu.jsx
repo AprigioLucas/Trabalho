@@ -1,6 +1,8 @@
+import style from './Menu.module.css'
+    
 export default function Menu(){
     return(
-        <div>
+        <div className={style['wrap-menu']}>
             <p>
                 <a href={`/`}>Tecnologias</a>
             </p>

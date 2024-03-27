@@ -4,7 +4,7 @@ export const Mapa =()=>{
     return(
         <>
         <Menu/>
-        <h1>Mapa</h1>
+        <h1>Mapa:</h1>
         </>
 
     )

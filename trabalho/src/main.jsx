@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import { Tecnologias } from './Tecnologias.jsx';
-import { Mapa, Media } from './Media.jsx';
-
+import { Media} from './Media.jsx';
+import { Mapa} from './Mapa.jsx';
 
 import {
   createBrowserRouter,
