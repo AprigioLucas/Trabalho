@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
 import { Tecnologias } from './Tecnologias.jsx';
 import { Media} from './Media.jsx';
 import { Mapa} from './Mapa.jsx';
+import { RickAndMorty} from './RickAndMorty.jsx';
 
 import {
   createBrowserRouter,
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/mapa",
     element:<Mapa />,
+  },
+  {
+    path: "/rick",
+    element:<RickAndMorty />,
   },
 ]);
 

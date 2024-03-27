@@ -95,7 +95,7 @@ export const Media = () => {
                         <div className={style.wrapEach}>
                             <h1>Media</h1>
                             {!isNaN(resp) && <p>{resp.toFixed(2)}</p>}
-                            {/* <button onClick={handleMedia}>Calcular media</button> */}
+                            
                         </div>
                     </div>
             </div>

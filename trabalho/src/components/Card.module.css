@@ -1,6 +1,6 @@
 .card{
     width:200px ;
-    height: 420px;
+    height: 420px;  /* maconha */
     background-color:var(--bg-secondary) ;
     border-radius: 5px;
     box-shadow: var(--shadow);

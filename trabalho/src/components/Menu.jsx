@@ -14,7 +14,10 @@ export default function Menu(){
             <p>
                 <a href={'/Mapa'}>Mapa</a>
             </p>
-            
+
+            <p>
+            <a href={`/rick`}>API</a>
+            </p>
             <p></p>
 
         </div>
