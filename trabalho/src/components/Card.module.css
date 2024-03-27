@@ -1,6 +1,6 @@
 .card{
     width:200px ;
-    height: 30vh;
+    height: 420px;
     background-color:var(--bg-secondary) ;
     border-radius: 5px;
     box-shadow: var(--shadow);
