@@ -1,10 +1,8 @@
-import { useState } from 'react';
-
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet-defaulticon-compatibility';
-
 import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
+import { useState } from 'react';
 
 import Menu from './components/Menu';
 import style from "./Mapa.module.css"
@@ -22,8 +20,8 @@ export const Mapa = () => {
     })
 
     const handleChange = (e) => {
-        const {nome, value} = e.target;
-        setFormData({...formData, [nome]: value});
+        const {name, value} = e.target;
+        setFormData({...formData, [name]: value});
     }
 
     const handleWhatsAppMessage = () => {

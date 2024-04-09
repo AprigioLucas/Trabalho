@@ -13,14 +13,6 @@
     padding-top: 2vh;
 }
 
-.wrap-media{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2vh;
-}
-
 .wrapInputsCalc{
     display: flex;
     flex-direction: row;
@@ -34,8 +26,8 @@
     border: none;
     border-radius: 999px;
     padding: 7px 10px;
-    background-color:gray;
-    color: #ffff;
+    background-color:lightgray;
+    color: black;
 }
 
 .wrapEach{

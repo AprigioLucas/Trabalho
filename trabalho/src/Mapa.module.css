@@ -51,6 +51,7 @@
     padding: 7px 10px;
     background-color: var(--bg-secondary);
     width: 100%;
+    color: azure;
 }
 .inputS1{
     width: 94%;
