@@ -17,7 +17,6 @@
 body{
   width: 100vw;
   height: auto;
-  min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--bg-primary);
   font-family: "Inter", sans-serif;

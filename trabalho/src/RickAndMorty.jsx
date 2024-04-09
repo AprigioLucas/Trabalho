@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import Menu from "./components/Menu"
 import {apiRMCharacters} from "./api/server"
 import { useEffect } from "react";
-
+import style from "./RickAndMorty.module.css"
 
 export const RickAndMorty = () =>{
     const[data, setData] = useState([])
@@ -30,6 +30,8 @@ export const RickAndMorty = () =>{
         return(
             <div>
                 <Menu/>
+                <div className={style.wrapContainer}>
+
                 <h1>Rick and Morty API</h1>
     
                 <input 
@@ -37,36 +39,34 @@ export const RickAndMorty = () =>{
                     placeholder="Digite uma página" 
                     value={page}
                     onChange={(event) => setPage(event.target.value)}
-                />
+                    />
                 <br />
                 <input 
                     type="text" 
                     placeholder="Digite um nome" 
                     value={searchName}
                     onChange={(event) => setSearchName(event.target.value)}
-                />
+                    />
                 <br />
-                 <section>
+                 <section className= {style.wrapCards} >
                  {data.map((item) => {
-                    return(
-                        <div key={item.id}>
+                     return(
+                         <div key={item.id}>
                         <Card 
                         title={item.name}
                         desc={item.status}
                         // value={item.status}
                         imgSrc={item.image}
+                        statusColor={item.status === 'Alive' ? 'green' 
+                              : item.status === 'Dead' ? 'red' 
+                              : 'gray'}
                         />
-                        <div>
-                          {item.status === "Alive"
-                           ? <div style={{background: "green", width: "100px"}}>Vivo</div>
-                           : item.status === "Dead"
-                           ? <div style={{background: "red", width: "100px"}}>Morto</div>
-                           : <div style={{background: "grey", width: "100px"}}>desconhecido</div>}
-                        </div>
+                       
                         </div>
                     )
-                 })}
+                })}
                  </section>
+                </div>
             </div>
         )
 

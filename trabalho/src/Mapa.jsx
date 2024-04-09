@@ -11,14 +11,14 @@ import style from "./Mapa.module.css"
 
 
 export const Mapa = () => {
-    const geoData = ({lat: -25.3718243, lng: -49.2161051})
+    const geoData = ({lat: -25.424427733698327, lng: -49.272273732230715 }) 
 
     const Numero = '5541998802927'
 
     const [formData, setFormData] = useState({
-        nome: '',
+        name: '',
         email: '',
-        mensagem: ''
+        message: ''
     })
 
     const handleChange = (e) => {
@@ -27,12 +27,12 @@ export const Mapa = () => {
     }
 
     const handleWhatsAppMessage = () => {
-        const {nome, email, mensagem} = formData;
+        const {name, email, message} = formData;
         
         const whatsappUrl = `https://api.whatsapp.com/send?phone=${Numero}&text=
-        Nome:%20${nome}%0D%0A
+        Nome:%20${name}%0D%0A
         Email:%20${email}%0D%0A
-        Mensagem:%20${mensagem}`;
+        Mensagem:%20${message}`;
 
         window.open(whatsappUrl, '_blank');
     }
@@ -59,21 +59,22 @@ export const Mapa = () => {
                     </MapContainer>
                 </div>
                 <div>
-                    <h2>WhatsApp</h2>
+                    <h3>WhatsApp</h3>
                     <div className={style.inputsDiv}>
                         <div className={style.wrapLabelInput}>
-                            <label htmlFor="name" className={style.labels}>Nome</label>
-                            <input className={style.inputS1} type="text" id='name' name='name' value={formData.nome} onChange={handleChange} required/>
+                            <label htmlFor="name" >Nome:</label>
+                            <input className={style.inputS1} type="text" id='name' name='name' value={formData.name} onChange={handleChange} required/>
                         </div>
                         <div className={style.wrapLabelInput}>
-                            <label htmlFor="email" className={style.labels}>Email</label>
+                            <label htmlFor="email" >Email:</label>
                             <input className={style.inputS1} type="email" id='email' name='email' value={formData.email} onChange={handleChange} required/>
                         </div>
                         <div className={style.wrapLabelInput}>
-                            <label htmlFor="message" className={style.labels}>Mensagem</label>
-                            <textarea className={style.txtArea} id='message' name='message' value={formData.mensagem} onChange={handleChange} required></textarea>
+                            <label htmlFor="message" >Mensagem:</label>
+                            <textarea className={style.txtArea} id='message' name='message' value={formData.message} onChange={handleChange} required></textarea>
                         </div>
-                        <button className={style.btnTec} onClick={handleWhatsAppMessage}>Enviar mensagem</button>
+                            <button className={style.btnTec} onClick={handleWhatsAppMessage}>Enviar mensagem</button>
+                        
                     </div>
                 </div>
             </div>

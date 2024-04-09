@@ -21,29 +21,9 @@ export const Media = () => {
 
         if(!isNaN(num1) && !isNaN(num2)&& !isNaN(num3)&& !isNaN(num4)&& !isNaN(num5)){
             setResp((num1 + num2 + num3 + num4 + num5) /5)
-            // handleMedia()
         }
     })
 
-    // const handleCalc = () => {
-    //     const num1 = parseFloat(numero1)
-    //     const num2 = parseFloat(numero2)
-    //     const num3 = parseFloat(numero3)
-    //     const num4 = parseFloat(numero4)
-    //     const num5 = parseFloat(numero5)
-
-    //     if(!isNaN(num1) && !isNaN(num2)&& !isNaN(num3)&& !isNaN(num4)&& !isNaN(num5)){
-    //         setResp((num1 + num2 + num3 + num4 + num5) /5)
-    //         // handleMedia()
-    //     }
-    // }
-
-    // const handleMedia = () => {
-    //     handleCalc(); 
-    //     const media = resp / 5; 
-    //     setResp(media); 
-        
-    // }
    
     return(
         <div className={style.sectionCalc}>

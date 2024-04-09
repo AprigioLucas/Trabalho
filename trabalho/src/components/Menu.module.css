@@ -1,7 +1,6 @@
 
 .wrap-menu{
-    /* background-color: gray; */
-    width: 80px;
+    width: 100px;
     height: 100%;
     position: fixed;
     top: 0;
@@ -11,4 +10,10 @@
     gap: 2vw;
     z-index: 999;
     flex-direction: column;
+    background-color: aqua;
 } 
+
+.wrap-menu a {
+    color: black; 
+   
+}

@@ -1,19 +1,16 @@
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .wrap-tecnologias{
-    width: 100%;
-    height: auto;
-    min-height: 80vh;
-    background-color: gray;
-    margin-top: 80px;
+    padding-left: 100px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 2vh;
-    padding: 4vh 0px;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 .wrap-cards-tec{
